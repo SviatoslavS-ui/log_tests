@@ -3,7 +3,7 @@
 namespace LogAnalyzer.Tests
 {
     [TestFixture]
-    internal class LogParserTests
+    public class LogParserTests
     {
         private LogParser _parser;
 
@@ -16,9 +16,6 @@ namespace LogAnalyzer.Tests
         [Test, TestCaseSource(typeof(LogParserTestData), nameof(LogParserTestData.ValidLogs))]
         public void ParseValidLogFile(string[] logLines, List<LogEntry> expectedEntries)
         {
-            //Arrange            
-            //var filePath = CreateTempFile(logLines);
-
             //Act
             var result = _parser.Parse(logLines).ToList();
 
@@ -38,9 +35,6 @@ namespace LogAnalyzer.Tests
         [Test, TestCaseSource(typeof(LogParserTestData), nameof(LogParserTestData.InvalidLogs))]
         public void ParseInvalidLinesAreSkipped(string[] logLines, int expectedCount)
         {
-            // Arrange            
-            //var filePath = CreateTempFile(logLines);
-
             //Act
             var result = _parser.Parse(logLines).ToList();
 
@@ -57,21 +51,11 @@ namespace LogAnalyzer.Tests
         [Test]
         public void ParseEmptyLogFile()
         {
-            //Arrange
-            //var filePath = CreateTempFile(Array.Empty<string>());
-
             //Act
             var result = _parser.Parse(Array.Empty<string>()).ToList();
 
             //Assert
             Assert.That(result, Is.Empty);
-        }
-
-        private string CreateTempFile(IEnumerable<string> logLines)
-        {
-            var tempFile = Path.GetTempFileName();
-            File.WriteAllLines(tempFile, logLines);
-            return tempFile;
         }
     }
 

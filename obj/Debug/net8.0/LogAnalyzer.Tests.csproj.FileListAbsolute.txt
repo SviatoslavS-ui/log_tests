@@ -103,3 +103,4 @@ C:\Code\Github\LogAnalyzer.Tests\obj\Debug\net8.0\refint\LogAnalyzer.Tests.dll
 C:\Code\Github\LogAnalyzer.Tests\obj\Debug\net8.0\LogAnalyzer.Tests.pdb
 C:\Code\Github\LogAnalyzer.Tests\obj\Debug\net8.0\LogAnalyzer.Tests.genruntimeconfig.cache
 C:\Code\Github\LogAnalyzer.Tests\obj\Debug\net8.0\ref\LogAnalyzer.Tests.dll
+C:\Code\Github\LogAnalyzer.Tests\obj\Debug\net8.0\LogAnalyzer.Tests.sourcelink.json

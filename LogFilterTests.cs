@@ -3,7 +3,7 @@
 namespace LogAnalyzer.Tests
 {
     [TestFixture]
-    internal class LogFilterTests
+    public class LogFilterTests
     {
         private LogFilter _filter;
 
