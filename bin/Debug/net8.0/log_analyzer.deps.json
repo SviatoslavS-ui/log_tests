@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "log_analyzer/1.0.0": {
+        "runtime": {
+          "log_analyzer.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "log_analyzer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
